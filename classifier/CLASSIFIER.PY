@@ -13,3 +13,5 @@ import matplotlib.pyplot as plt
 plt.figure(figsize=(10,6))
 tree.plot_tree(clf, feature_names=["weight", "texture"], class_names=["apple", "orange"], filled=True)
 plt.show()
+
+
