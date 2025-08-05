@@ -3,24 +3,24 @@
 ## Introduction
 The "Machine Learning Recipes" series is designed to guide you through the fundamentals of Machine Learning, starting from basic concepts to more advanced topics. It demystifies machine learning by showing how algorithms learn from examples and experience, rather than relying on hard-coded rules. We explore various types of classifiers, feature engineering techniques, and how to build and evaluate machine learning models.
 
-Introduction to Machine Learning
+## Introduction to Machine Learning
 Machine Learning is a subfield of artificial intelligence (AI) focusing on algorithms that learn from examples and experience, rather than relying on explicit, hard-coded rules. This allows programs to solve numerous problems without needing to be rewritten for each specific task. A core concept in ML is the classifier, which can be thought of as a function that takes input data and assigns a label as output.
 Core Concepts
-• Supervised Learning: This technique for automatically writing classifiers begins with examples of the problem you want to solve. It's about learning a function, or a mapping from input (features) to output (labels), by adjusting a model's parameters based on training data.
-• Features and Labels:
+- Supervised Learning: This technique for automatically writing classifiers begins with examples of the problem you want to solve. It's about learning a function, or a mapping from input (features) to output (labels), by adjusting a model's parameters based on training data.
+- Features and Labels:
     ◦ Features (X): These are the input measurements or attributes that describe the data. They represent your knowledge about the world for the classifier.
     ◦ Labels (Y): This is the output we want to predict or the class of the data.
     ◦ Good Features: A good feature makes it easy to discriminate between different types of output. They should be informative, independent (not highly correlated with other features), and easy to understand. Classifiers are only as good as the features provided.
-• Training and Testing Data: To verify a model's performance on unseen data, a dataset is typically partitioned into two parts:
+- Training and Testing Data: To verify a model's performance on unseen data, a dataset is typically partitioned into two parts:
     ◦ Training Data (X_train, y_train): Used to train the model, allowing the algorithm to find patterns. The more training data, the better the classifier.
     ◦ Testing Data (X_test, y_test): Kept separate and used to evaluate how accurate the trained model is on new, unseen examples. This helps ensure the model works well before deployment.
-• Model and Parameters: A model is a prototype or set of rules that define the body of a function. It typically has parameters that can be adjusted using training data. Learning involves iteratively adjusting these parameters to make the model more accurate.
+- Model and Parameters: A model is a prototype or set of rules that define the body of a function. It typically has parameters that can be adjusted using training data. Learning involves iteratively adjusting these parameters to make the model more accurate.
 Classifiers and Techniques
 Decision Trees
 Decision Trees are a type of classifier known for being interpretable and easy to understand, allowing you to see exactly why a decision is made.
-• Learning Algorithm (CART): The CART (Classification and Regression Trees) algorithm is used to build decision trees from data. It provides a procedure to decide which true/false questions to ask and when.
-• Node Splitting: Each node asks a true/false question about a feature, partitioning the data into two subsets (true rows and false rows). The goal is to unmix the labels as you proceed down the tree, producing the purest possible distribution of labels at each node.
-• Metrics for Purity:
+- Learning Algorithm (CART): The CART (Classification and Regression Trees) algorithm is used to build decision trees from data. It provides a procedure to decide which true/false questions to ask and when.
+- Node Splitting: Each node asks a true/false question about a feature, partitioning the data into two subsets (true rows and false rows). The goal is to unmix the labels as you proceed down the tree, producing the purest possible distribution of labels at each node.
+- Metrics for Purity:
     ◦ Gini Impurity: A metric ranging from 0 to 1 (lower is better) that quantifies the amount of uncertainty or mixing at a node. A Gini impurity of 0 means no mixing (e.g., all apples in a set).
     ◦ Information Gain: Quantifies how much a question reduces uncertainty. It's calculated as the uncertainty of the starting set minus the weighted impurity of the child nodes after a split. The question that produces the most gain is selected as the best one for that node.
 • Structure: The tree continues dividing data until no further questions can be asked (information gain is zero), at which point a leaf node is added, providing a prediction based on the ratio of labels in the data that reached it.
