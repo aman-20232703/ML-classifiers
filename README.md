@@ -5,7 +5,7 @@ The "Machine Learning Recipes" series is designed to guide you through the funda
 
 ## Introduction to Machine Learning
 Machine Learning is a subfield of artificial intelligence (AI) focusing on algorithms that learn from examples and experience, rather than relying on explicit, hard-coded rules. This allows programs to solve numerous problems without needing to be rewritten for each specific task. A core concept in ML is the classifier, which can be thought of as a function that takes input data and assigns a label as output.
-Core Concepts
+## Core Concepts
 - Supervised Learning: This technique for automatically writing classifiers begins with examples of the problem you want to solve. It's about learning a function, or a mapping from input (features) to output (labels), by adjusting a model's parameters based on training data.
 - Features and Labels:
     ◦ Features (X): These are the input measurements or attributes that describe the data. They represent your knowledge about the world for the classifier.
