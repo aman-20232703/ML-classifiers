@@ -70,11 +70,11 @@ Feature engineering involves transforming raw data into a more useful representa
 - Bucketing: Transforms a numeric feature (e.g., age) into several categorical ones based on ranges. This allows linear models to capture non-linear relationships by learning different weights for each bucket.
 
 - Categorical Features: For features with a small number of discrete values (e.g., education level), using the raw value directly is effective.
-- 
+  
 - Feature Crossing: Creates new features by combining existing ones. This can be particularly helpful for linear classifiers that cannot naturally model interactions between features.
-- 
+  
 - Hashed Feature Columns: An efficient way to represent categorical features with a large vocabulary, especially when the vocabulary isn't known in advance. A hash function computes the bit automatically. This can save programming time and limit memory usage.
-- 
+  
 - Embeddings: A powerful technique for categorical data in deep learning. An embedding is a vector that represents the "meaning" of a categorical value (e.g., a word). They are learned automatically during DNN training and can compress representations, allowing the classifier to learn general concepts rather than memorising specific values. For example, job titles like "programmer" and "software engineer" could have similar embeddings.
   
 **Tools and Libraries**
