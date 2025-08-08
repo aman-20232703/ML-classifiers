@@ -78,12 +78,12 @@ Feature engineering involves transforming raw data into a more useful representa
 - Embeddings: A powerful technique for categorical data in deep learning. An embedding is a vector that represents the "meaning" of a categorical value (e.g., a word). They are learned automatically during DNN training and can compress representations, allowing the classifier to learn general concepts rather than memorising specific values. For example, job titles like "programmer" and "software engineer" could have similar embeddings.
   
 **Tools and Libraries**
-- TensorFlow: An open-source machine learning library, especially useful for deep learning.
-- TF.Learn: A high-level machine learning library built on top of TensorFlow, offering a syntax similar to scikit-learn.
-- Scikit-learn: An open-source library for machine learning, used for various tasks including data importing, splitting, and classifier implementation.
-- Docker: Used for configuring the TensorFlow environment by providing pre-configured TensorFlow images.
-- IPython/Jupyter Notebook: An interactive computing environment often used for experimenting with ML code.
-- Matplotlib: A Python plotting library used for displaying images and visualising data.
-- Facets: A tool for visualising what feature transformations do, particularly helpful with census data.
-- TensorFlow Embedding Projector: An online tool to visualise datasets of word embeddings.
-- Scipy: A Python library used for scientific computing, including functions like Euclidean Distance
+- **TensorFlow:** An open-source machine learning library, especially useful for deep learning.
+- **TF.Learn:** A high-level machine learning library built on top of TensorFlow, offering a syntax similar to scikit-learn.
+- **Scikit-learn:** An open-source library for machine learning, used for various tasks including data importing, splitting, and classifier implementation.
+- **Docker:** Used for configuring the TensorFlow environment by providing pre-configured TensorFlow images.
+- **IPython/Jupyter Notebook:** An interactive computing environment often used for experimenting with ML code.
+- **Matplotlib:** A Python plotting library used for displaying images and visualising data.
+- **Facets:** A tool for visualising what feature transformations do, particularly helpful with census data.
+- **TensorFlow Embedding Projector:** An online tool to visualise datasets of word embeddings.
+- **Scipy:** A Python library used for scientific computing, including functions like Euclidean Distance
