@@ -27,17 +27,17 @@ This technique for automatically writing classifiers begins with examples of the
 ## Classifiers and Techniques
 **Decision Trees**
 Decision Trees are a type of classifier known for being interpretable and easy to understand, allowing you to see exactly why a decision is made.
-- Learning Algorithm (CART): The CART (Classification and Regression Trees) algorithm is used to build decision trees from data. It provides a procedure to decide which true/false questions to ask and when.
+- **Learning Algorithm (CART):** The CART (Classification and Regression Trees) algorithm is used to build decision trees from data. It provides a procedure to decide which true/false questions to ask and when.
   
-- Node Splitting: Each node asks a true/false question about a feature, partitioning the data into two subsets (true rows and false rows). The goal is to unmix the labels as you proceed down the tree, producing the purest possible distribution of labels at each node.
+- **Node Splitting:** Each node asks a true/false question about a feature, partitioning the data into two subsets (true rows and false rows). The goal is to unmix the labels as you proceed down the tree, producing the purest possible distribution of labels at each node.
   
-- Metrics for Purity:
+- **Metrics for Purity:**
   
     - Gini Impurity: A metric ranging from 0 to 1 (lower is better) that quantifies the amount of uncertainty or mixing at a node. A Gini impurity of 0 means no mixing (e.g., all apples in a set).
       
     - Information Gain: Quantifies how much a question reduces uncertainty. It's calculated as the uncertainty of the starting set minus the weighted impurity of the child nodes after a split. The question that produces the most gain is selected as the best one for that node.
       
-- Structure: The tree continues dividing data until no further questions can be asked (information gain is zero), at which point a leaf node is added, providing a prediction based on the ratio of labels in the data that reached it.
+- **Structure:** The tree continues dividing data until no further questions can be asked (information gain is zero), at which point a leaf node is added, providing a prediction based on the ratio of labels in the data that reached it.
   
 **K-Nearest Neighbors (KNN)**
 K-Nearest Neighbors is a simple classifier where predictions are made by finding the 'k' closest training points to a new testing point and predicting the majority class among those neighbors.
@@ -67,15 +67,15 @@ Deep Learning is a branch of machine learning that has led to significant advanc
 **Feature Engineering**
 Feature engineering involves transforming raw data into a more useful representation for the classifier. It's one of the most important contributions to an ML experiment.
 
-- Bucketing: Transforms a numeric feature (e.g., age) into several categorical ones based on ranges. This allows linear models to capture non-linear relationships by learning different weights for each bucket.
+- **Bucketing:** Transforms a numeric feature (e.g., age) into several categorical ones based on ranges. This allows linear models to capture non-linear relationships by learning different weights for each bucket.
 
-- Categorical Features: For features with a small number of discrete values (e.g., education level), using the raw value directly is effective.
+- **Categorical Features:** For features with a small number of discrete values (e.g., education level), using the raw value directly is effective.
   
-- Feature Crossing: Creates new features by combining existing ones. This can be particularly helpful for linear classifiers that cannot naturally model interactions between features.
+- **Feature Crossing:** Creates new features by combining existing ones. This can be particularly helpful for linear classifiers that cannot naturally model interactions between features.
   
-- Hashed Feature Columns: An efficient way to represent categorical features with a large vocabulary, especially when the vocabulary isn't known in advance. A hash function computes the bit automatically. This can save programming time and limit memory usage.
+- **Hashed Feature Columns:** An efficient way to represent categorical features with a large vocabulary, especially when the vocabulary isn't known in advance. A hash function computes the bit automatically. This can save programming time and limit memory usage.
   
-- Embeddings: A powerful technique for categorical data in deep learning. An embedding is a vector that represents the "meaning" of a categorical value (e.g., a word). They are learned automatically during DNN training and can compress representations, allowing the classifier to learn general concepts rather than memorising specific values. For example, job titles like "programmer" and "software engineer" could have similar embeddings.
+- **Embeddings:** A powerful technique for categorical data in deep learning. An embedding is a vector that represents the "meaning" of a categorical value (e.g., a word). They are learned automatically during DNN training and can compress representations, allowing the classifier to learn general concepts rather than memorising specific values. For example, job titles like "programmer" and "software engineer" could have similar embeddings.
   
 **Tools and Libraries**
 - **TensorFlow:** An open-source machine learning library, especially useful for deep learning.
