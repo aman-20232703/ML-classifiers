@@ -47,24 +47,24 @@ K-Nearest Neighbors is a simple classifier where predictions are made by finding
 - Pros: Relatively easy to understand and works reasonably well for some problems.
 - Cons: Can be slow as it iterates over every training point for each prediction, and it doesn't have an easy way to represent feature importance.
   
-**Linear Classifiers**
+### Linear Classifiers
 Linear classifiers, such as those used for the MNIST handwritten digit classification, are trained to predict which of several classes an input belongs to.
 - Mechanism: They work by adding up "evidence" for each possible digit. Each pixel (feature) flows into an input node, travels along edges, and is multiplied by a weight on that edge. Output nodes gather this evidence, and the digit with the most evidence is predicted.
 - Weights: The "important part is the weights". They start randomly and are gradually adjusted during training (in the fit method) to achieve accurate classifications.
 - Visualization of Weights: Visualising weights can provide intuition into how the classifier works. Positive weights (e.g., red) indicate evidence for a digit, while negative weights (e.g., blue) indicate evidence against it. For instance, looking at the weights for the digit '1', one can see an outline of the digit formed by positive weights in the central column where a '1' is typically drawn.
   
-**Neural Networks and Deep Learning**
+### Neural Networks and Deep Learning
 Deep Learning is a branch of machine learning that has led to significant advancements, especially in domains like image classification. Neural networks are a type of classifier used in deep learning that can learn more complex functions.
 
-- Feature Extraction: A major advantage of deep learning for images is that you don't need to manually extract features like textures or shapes; instead, you can use the raw pixels of the image as features, and the classifier handles the rest.
+- **Feature Extraction:** A major advantage of deep learning for images is that you don't need to manually extract features like textures or shapes; instead, you can use the raw pixels of the image as features, and the classifier handles the rest.
   
-- Image Classification Example (MNIST): Classifying handwritten digits from the MNIST dataset is considered the "Hello World" of computer vision. Images are low-resolution (28x28 pixels in grayscale) and properly segmented (each contains exactly one digit). A 28x28 image has 784 pixels, which means 784 features (when flattened into a 1D array).
+- **Image Classification Example (MNIST):** Classifying handwritten digits from the MNIST dataset is considered the "Hello World" of computer vision. Images are low-resolution (28x28 pixels in grayscale) and properly segmented (each contains exactly one digit). A 28x28 image has 784 pixels, which means 784 features (when flattened into a 1D array).
   
-- TensorFlow for Poets: This code lab simplifies image classification by using retraining on an existing, highly accurate model called Inception, trained on millions of images. This allows for the creation of a new, high-accuracy classifier with significantly less training data and time.
+- **TensorFlow for Poets:** This code lab simplifies image classification by using retraining on an existing, highly accurate model called Inception, trained on millions of images. This allows for the creation of a new, high-accuracy classifier with significantly less training data and time.
   
-- Training Data Quality: For good image classifiers, diversity and quantity of training data are key. Diverse images (different angles, lighting, colours) and a large quantity of images improve accuracy.
+- **Training Data Quality:** For good image classifiers, diversity and quantity of training data are key. Diverse images (different angles, lighting, colours) and a large quantity of images improve accuracy.
   
-**Feature Engineering**
+### Feature Engineering
 Feature engineering involves transforming raw data into a more useful representation for the classifier. It's one of the most important contributions to an ML experiment.
 
 - **Bucketing:** Transforms a numeric feature (e.g., age) into several categorical ones based on ranges. This allows linear models to capture non-linear relationships by learning different weights for each bucket.
@@ -77,7 +77,7 @@ Feature engineering involves transforming raw data into a more useful representa
   
 - **Embeddings:** A powerful technique for categorical data in deep learning. An embedding is a vector that represents the "meaning" of a categorical value (e.g., a word). They are learned automatically during DNN training and can compress representations, allowing the classifier to learn general concepts rather than memorising specific values. For example, job titles like "programmer" and "software engineer" could have similar embeddings.
   
-**Tools and Libraries**
+### Tools and Libraries
 - **TensorFlow:** An open-source machine learning library, especially useful for deep learning.
 - **TF.Learn:** A high-level machine learning library built on top of TensorFlow, offering a syntax similar to scikit-learn.
 - **Scikit-learn:** An open-source library for machine learning, used for various tasks including data importing, splitting, and classifier implementation.
